@@ -9,7 +9,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Person {
+public class Person extends BaseEntity {
 
     private String firstName;
     private String lastName;
