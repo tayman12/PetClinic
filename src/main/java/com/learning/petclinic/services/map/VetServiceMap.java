@@ -4,11 +4,11 @@ import com.learning.petclinic.model.Vet;
 import com.learning.petclinic.services.CrudService;
 import com.learning.petclinic.services.VetService;
 import org.springframework.context.annotation.Profile;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-@Component
+@Service
 @Profile("map")
 public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long>, VetService {
 
