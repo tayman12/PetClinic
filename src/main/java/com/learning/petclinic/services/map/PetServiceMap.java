@@ -2,10 +2,15 @@ package com.learning.petclinic.services.map;
 
 import com.learning.petclinic.model.Pet;
 import com.learning.petclinic.services.CrudService;
+import com.learning.petclinic.services.PetService;
+import org.springframework.context.annotation.Profile;
+import org.springframework.stereotype.Component;
 
 import java.util.Set;
 
-public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long> {
+@Component
+@Profile("map")
+public class PetServiceMap extends AbstractMapService<Pet, Long> implements CrudService<Pet, Long>, PetService {
 
     @Override
     public Set<Pet> findAll() {
