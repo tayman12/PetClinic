@@ -13,6 +13,7 @@ import java.time.LocalDate;
 @Setter
 public class Pet extends BaseEntity {
 
+    private String name;
     private PetType type;
     private Owner owner;
     private LocalDate birthday;
