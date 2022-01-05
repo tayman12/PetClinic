@@ -3,11 +3,9 @@ package com.learning.petclinic.model;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.Set;
-
 @Getter
 @Setter
-public class Vet extends Person {
+public class Speciality {
 
-    private Set<Speciality> speciality;
+    private String description;
 }
