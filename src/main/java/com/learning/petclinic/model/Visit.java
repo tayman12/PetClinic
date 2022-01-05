@@ -7,7 +7,7 @@ import java.time.LocalDate;
 
 @Getter
 @Setter
-public class Visit {
+public class Visit extends BaseEntity {
 
     private LocalDate date;
 
