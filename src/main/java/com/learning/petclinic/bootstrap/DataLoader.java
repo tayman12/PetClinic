@@ -5,7 +5,6 @@ import com.learning.petclinic.model.Pet;
 import com.learning.petclinic.model.PetType;
 import com.learning.petclinic.model.Vet;
 import com.learning.petclinic.services.OwnerService;
-import com.learning.petclinic.services.PetService;
 import com.learning.petclinic.services.PetTypeService;
 import com.learning.petclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
@@ -18,13 +17,11 @@ public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
     private final VetService vetService;
-    private final PetService petService;
     private final PetTypeService petTypeService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetService petService, PetTypeService petTypeService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
-        this.petService = petService;
         this.petTypeService = petTypeService;
     }
 
